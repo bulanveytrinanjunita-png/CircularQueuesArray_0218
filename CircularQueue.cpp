@@ -96,5 +96,16 @@ public:
             }
             cout << endl;
         }
+        else
+        {
+            // jika FRONT <= REAR, iterasi dari FRONT hingga akhir array
+            while (FRONT_position <= max - 1)
+            {
+                cout << queue_array[FRONT_position] << " ";
+                FRONT_position++;
+            }
+
+            FRONT_position = 0;
+        }
     }
 };
